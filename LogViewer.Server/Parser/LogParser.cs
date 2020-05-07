@@ -11,8 +11,7 @@ using Serilog.Events;
 using Serilog.Filters.Expressions;
 using Serilog.Formatting.Compact.Reader;
 
-
-namespace LogViewer.Server
+namespace LogViewer.Server.Parser
 {
     public class LogParser : ILogParser
     {

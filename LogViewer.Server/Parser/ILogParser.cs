@@ -1,9 +1,9 @@
-﻿using LogViewer.Server.Models;
+﻿using System.Collections.Generic;
+using LogViewer.Server.Models;
 using Serilog.Core;
 using Serilog.Events;
-using System.Collections.Generic;
 
-namespace LogViewer.Server
+namespace LogViewer.Server.Parser
 {
     public interface ILogParser
     {

@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using LogViewer.Server.Extensions;
 using LogViewer.Server.Models;
+using LogViewer.Server.Parser;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 

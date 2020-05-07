@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using LogViewer.Server.Parser;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,8 +19,8 @@ namespace LogViewer.Server
         public void ConfigureServices(IServiceCollection services)
         {
             services
-                .AddMvcCore().SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
-                .AddJsonFormatters();
+                .AddMvcCore(options => options.EnableEndpointRouting = false);
+                //.AddJsonFormatters();
 
             services.AddSingleton<ILogParser, LogParser>();
         }
